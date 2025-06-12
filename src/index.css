@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-slider button.slick-prev {
+  top: 120px;
+  left: 0px;
+  z-index: 10;
+}
+.custom-slider button.slick-next {
+  top: 120px;
+  right: 20px;
+  z-index: 10;
+}
+.custom-slider button.slick-prev::before {
+  color: white;
+  content: "\276E";
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  background: #0e9c49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-slider button.slick-next::before {
+  color: white;
+  content: "\276F";
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  background: #0e9c49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s ease-in-out;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-left-animation {
+  animation: slideLeft 0.5s ease-out;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-right-animation {
+  animation: slideRight 0.5s ease-out;
+}
+@keyframes fade-in-from-top {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-from-top-animation {
+  animation: fade-in-from-top 0.5s ease-out;
+}
+
+.ant-steps-item-icon {
+  background: #0e9c49 !important;
+  border: #0e9c49 !important;
+}
+
+.ant-steps-icon {
+  color: white !important;
+}
+.ant-steps-item-title::after {
+  background: #0e9c49 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* collor spin */
+.ant-spin-dot-item {
+  background: #0e9c49 !important;
+}
+
+.ant-btn {
+  color: black !important;
+  border: 1px #ccc solid !important;
+}
+.swal2-styled {
+  background-color: #0e9c49 !important;
+}
+
+.imgrender {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
