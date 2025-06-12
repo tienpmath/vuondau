@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 const instance = axios.create({
  // baseURL: "https://server-ecommerce-p2qi.onrender.com/api/v2",
    //baseURL: "http://localhost:8090/api/v2",
-   baseURL: "http://103.72.98.164:8090/api/v2",
+   baseURL: "https://shop.raovatlamdong.vn/api/v2",
 });
 
 // Add a request interceptor
